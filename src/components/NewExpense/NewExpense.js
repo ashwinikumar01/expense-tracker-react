@@ -6,7 +6,6 @@ const NewExpense = (props) => {
   const [isEditing, setIsEditing] = useState(false);
 
   const saveExpenseDataHandler = (enteredExpenseData) => {
-    /*will execute in ExpenseForm*/
     const expenseData = {
       ...enteredExpenseData,
       id: Math.random().toString(),
